@@ -139,6 +139,7 @@ class MiRSimulatorApp:
         self.robots = []
         self.next_robot_id = 1
         self.robot_markers = {}  # robot_id -> canvas item id
+        self._current_runs = []  # Lista de recorridos actuales
 
         # Guardamos snapshot inicial de productos
         ensure_sample_products()
